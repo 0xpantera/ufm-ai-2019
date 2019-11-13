@@ -1,0 +1,33 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red27\green31\blue34;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c14118\c16078\c18039;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww25400\viewh15500\viewkind0
+\deftab720
+\pard\pardeftab720\sl360\sa320\partightenfactor0
+
+\f0\fs32 \cf2 \cb3 \expnd0\expndtw0\kerning0
+GRUPO\
+* NATHALIA MORALES\
+* YURI KAFFATY\
+* FAUSTO FOCOMBE\
+* CHRISTIAN CASTILLO\
+Originally the files where ABC files, which is in plain text. In order to make the data as an input to the neural network and easily parsable the uninterpretable symbols (e.g.\'a0"/@<.5A7") on the chord notation where erased and we are using one single format for diminished/augmented/over-note notation ("Cd"\'a0for diminished,\'a0"Ca"\'a0for augmented and\'a0"C/e"\'a0for a C chord over E).\
+Inside the notation we treated the repetition (in order to have a patter for the machine to recognize) with\
+	1.	Adding beginning-of-repeat symbols (|:) whenever ambiguous\
+	2.	Uniforming the first and second time bar notation (it sometimes changed) \
+	3.	Adding double bars\'a0||\'a0at the end of all second time bars, to make it more transparent which notes are part of a repetition structure and which are not.\
+\
+We expanded the usage of the part name notation, and used it to encode for other score notations that are not easily machine-interpretable:\
+	1.	We modified slightly the usage of the\'a0P\'a0metadata, allowing us to distinguish easily between a single part name (P) and the piece part playing sequence (new piece metadata label\'a0Y), which in the originals are both under the same tag\'a0P\
+	2.	Substituted all notations of "Da Capo al Segno" or "Dal Segno" with a corresponding part subdivision and playing repetition.\
+\
+The chordal parts of a few pieces contain what can be considered a\'a0walking bass\'a0sequence of notes intermixed with the chords themselves. We decided to remove these extra notes from the cleaned ABC files for two reasons:\
+	1.	The chords are significantly easier to interpret without them;\
+	2.	There are only very few pieces that have this feature, making it of no interest for the purpose of learning algorithms.\
+We also removed the lyrics from the few pieces that contained them for the same reason.\
+Generic cleaning\
+Some pieces contained bars of the wrong duration because of an inconsistent number of notes or note lengths. In most cases we tried to fix these inconsistencies by filling the bar or reducing the duration of the notes in the way that we thought made the most musical sense, but in a couple of cases we opted for simply removing the offending pieces (e.g. the Pachelbel\'92s Canon renditions).\
+MIDI conversion\
+Some ABC pieces have two sequences of alternative chords in a repeat, so that when playing the melody the second time the chord sequence is different. This is valuable musical information, so we did not remove it from the ABC files, but we decided to ignore it in the MIDI conversion to simplify the parsing operation, so that all repeats always use the first chord of each two-chord alternate pair.\
+}
