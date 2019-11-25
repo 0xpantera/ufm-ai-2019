@@ -1,0 +1,34 @@
+Entrega para el dia 18 de Septiembre, 2019
+
+Grupo:
+
+Nathalia Morales
+Yuri Kaffaty
+Christian Castillo
+Fausto Holcombe
+
+
+Preguntas a contestar:
+
+Datasets y url:
+* Alice in Wonderland - libro - URL: http://www.gutenberg.org/cache/epub/28885/pg28885.txt
+
+* Para probar nuestro proyecto con un dataset en español: Alicia en el Pais de las Maravillas - libro - URL: http://www.libroteca.net/Descargando.asp?tam=57.32&archivo=%A5%B5%B9%B7%A4%B1%B9%A6%A4r%93%A4%B5%B5%BF%AF%AFop%8F%A8%BA%B9%B6cpp%84%AF%AC%B3%AC%A4c%95%B1c%88%BCc%93%A4%3D%B6c%87%B5c%8F%A4%C3c%90%A4%C2%A4%B9%AC%BC%AF%A4%B6~%B7%BB%B7~%BD%AC%B3
+
+Where does it come from?
+* The Project Gutenberg EBook Library
+
+Generacion o Clasificacion?
+* Generacion de texto
+
+Use case? Que tarea le vamos a poner a hacer nosotros?
+* Generación de texto nuevo a partir del libro, escribiendo oraciones. 
+* Como segunda etapa seria generación de texto en español.
+
+Porque usamos estos datasets?
+* Porque son literatura clásica, escrita en una manera tradicional y en un periodo de tiempo en donde la gramática era empleada de manera correcta.
+
+De donde salio la idea? Cite any previous use cases for the dataset.
+* Nos dio curiosidad dentro del grupo, primero: Si íbamos a lograr que el generador de texto pueda llevar a construir oraciones coherentes. Segundo: si la literatura clásica obedece estrictamente la gramática de forma en la que es mas fácil generarla a partir de ella que con literatura moderna.
+* https://www.tensorflow.org/beta/tutorials/text/text_generation
+* https://www.kaggle.com/shivamb/beginners-guide-to-text-generation-using-lstms
