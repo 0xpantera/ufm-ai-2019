@@ -1,0 +1,12 @@
+Entrega1                
+a. Where does it come from?
+De Kaggle : https://www.kaggle.com/c/painter-by-numbers/data
+b. What is your use case?
+Generar arte basado en técnicas de diferentes artistas. 
+c. Why did you choose this dataset?
+Porque el arte es considerado como una cualidad humana y sería interesante que por medio de AI se pueda replicar hasta cierto punto esta habilidad de las personas. 
+d. Is it appropriate for your use case?
+Si porque recopila diferentes técnicas artisticas existentes
+e. Cite any previous use cases for the dataset
+En una Kaggle competition donde por medio de AI busca reconocer patrones de las pinturas para identificar quien fue el autor de ella.
+
